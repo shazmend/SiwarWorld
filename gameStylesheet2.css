@@ -97,7 +97,6 @@
         .Button a{
             text-decoration: none;
             color: white;
-            margin-left: 1vh;
         }
         
        
@@ -208,7 +207,6 @@
             text-decoration: none;
             color: white;
             text-align: center;
-            margin-left: 1vh;
         }
         .Button a:hover{
             color: #4BBD9B;

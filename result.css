@@ -1,0 +1,270 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Cairo', sans-serif;
+
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px)  {
+    body{
+        /* background img */
+        background-image: url("./background-img.svg");
+        background-repeat: no-repeat;
+        background-size: 100%; 
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+        /*  this for the navbar and its disable */
+        .navbartext ul{
+            display: none;
+         }
+
+         /* the navbar icon */
+        .menu {
+            background-color: #F8926E;
+            display: flex;
+            justify-content: end;
+            padding: 15px;    
+            color: white; 
+            width: 95%;
+        }
+
+    /*this contain the text and images of the result */
+
+        .result{
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            align-items: center;
+            color: white;
+            border-radius: 20%;
+            background-color: #4b43439e;
+            width: 85%;
+            height: 70vh;
+            margin-top:20% ;
+            margin-bottom: 10%;
+        }
+
+        .result h1{
+            margin: 8%;
+            font-size: 50px;
+        }
+
+        /*for the top content of the result */
+
+        .up-text1{
+            display: flex;
+            flex-direction: row;
+        }
+
+        .up-text1 img{
+            width: 15%;
+            margin-left: 24px;
+
+        }
+        .text1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }    
+        .text1 img{
+            width: 50%; 
+        }    
+        .text1 p{
+            font-size: 20px;
+            margin-bottom: 10%;
+        }
+
+        /*for the bottom content of the result */
+        
+        .down-text2{
+            margin-top: 10%;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .down-text2 img{
+            width: 15%;
+            margin-left: 24px;
+
+        }
+        .text2{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }    
+        .text2 img{
+            width: 50%; 
+        }    
+        .text2 p{
+            font-size: 20px;
+            margin-bottom: 10%;
+        }
+    
+        /*for the more details of the result */
+        .text3{
+            margin-bottom: 10%;
+        }
+        .text3 a{
+            font-size:150%;
+            color: white;
+        }
+  
+    }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    body{
+            /* background img */
+         background-image: url("./background-img.svg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+     /* the navbar icon is disable*/
+    .menu{
+        display: none;
+    }
+
+
+     /*  this for the navbar and its disable */
+
+    .navbartext ul{
+        background-color: #F8926E;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        padding-bottom: 15px;
+    }
+    .navbartext li{
+        display: inline;
+        font-size: larger;
+        font-weight: bold;
+        margin-top: 2vh; 
+        margin-left: 5vh;
+        margin-right: 5vh;
+        text-shadow: 1px 1px #bdb9b9;
+    }
+    .navbartext a{
+        text-decoration: none;
+        color: white;
+    
+    }
+    .navbartext a:hover{
+        color: #FDD456;
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+        margin-top: 12%;    
+}
+    .text h1 , a{
+        text-align: center;
+        color: white;
+        margin: 5%;
+    }
+    .text a{
+        text-decoration: none;
+        margin: 4%;
+    } 
+
+
+    /*this contain the text and images of the result */
+
+    .result{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        color: white;
+        border-radius: 5%;
+        background-color: #4b43439e;
+        width: 60%;
+        height: 80vh;
+        margin-top:10% ;
+        margin-left: 20%;
+    }
+
+    .result h1{
+        margin: 8%;
+        font-size: 50px;
+    }
+
+
+    /*for the top content of the result */
+
+    .up-text1{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .up-text1 img{
+        width: 15%;
+        margin-left: 24px;
+
+    }
+    .text1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }    
+    .text1 img{
+        width: 50%; 
+    }    
+    .text1 p{
+        font-size: 20px;
+        margin-bottom: 10%;
+    }
+
+
+    /*for the bottom content of the result */
+
+    .down-text2{
+        margin-top: 10%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .down-text2 img{
+        width: 15%;
+        margin-left: 24px;
+
+    }
+    .text2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }    
+    .text2 img{
+        width: 50%; 
+    }    
+    .text2 p{
+        font-size: 20px;
+        margin-bottom: 10%;
+    }
+
+    .text3{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 7%;
+
+    }
+    
+    /*for the more details of the result */
+    .text3 a{
+        color: white;
+        font-size:220%;
+    }
+
+}
+   
+ }

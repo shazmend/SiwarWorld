@@ -1,0 +1,349 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Cairo', sans-serif;
+}
+/* phones */
+@media only screen and (max-width: 600px) {
+    body{
+        width: 100%;
+    }
+    .Header{
+        background-image: url(Background2.svg);
+        background-repeat: no-repeat;
+        height: 90vh;
+    }
+    .NavBar ul{
+        display: flex;
+        justify-content: center;
+    }
+    .NavBar li{
+        display: inline;
+        font-size:medium;
+        font-weight: bold;
+        margin-top: 4vh; 
+        margin-left: 5vh;
+        margin-right: 5vh;
+        text-shadow: 1px 1px #bdb9b9; 
+    }
+    .NavBar a{
+        text-decoration: none;
+        color: white;
+    }
+    .SiwarWorld{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Logo{
+        margin-top: 10vh;
+    }
+    .SiwarWorld p{
+        display: none;
+    }
+    .SiwarGoal{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .SiwarGoal p{
+        width: 400px;
+        text-align: center;
+    }
+    .SiwarLetters{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        margin-top: 10vh;
+    }
+    .Fast{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .Aware{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .Respect{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .Adult{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .SiwarLettersText{
+        text-align: center;
+        margin-right:2vh;
+    }
+    .SiwarLettersText p{
+       width: 24vw;
+    }
+    .SecondSection{ 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10vh;
+    }
+    .Circle h1{ 
+        text-align: center;
+    }
+    .Circle p{
+        text-align: center;
+        width: 480px;
+    }
+    .FirstChallenge{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Button{
+        background-color: #4BBD9B;
+        border-radius: 40px;
+        width: 35vw;
+        padding: 2vh 2vh;
+        margin-left: 10vw ; 
+        display: flex;
+        justify-content: center;
+    }
+    .Button a{
+        text-decoration: none;
+        color: white;
+        text-align: center;
+    }
+    Video{
+        margin-top: 25vh;
+        width: 80vw;
+    }
+    .WorkTeam{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10vh;
+    }
+    .TeamMembers{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,2fr);
+        gap: 2vh;
+    }
+    .MemberCards{
+        background-color: #F3F3F3;
+        height: 78vh;
+        width: 22vh;
+        border-radius: 5px;
+        display: grid;
+        grid-template-rows: 20% 10% 10% 50% 10%;
+        justify-items: center;
+        text-align: center;
+    }
+    .MemberCards img{
+        margin-top: 3vh;
+    }
+    .MemberCards h3{
+        margin-top: 3vh;
+    }
+    .MemberCards p{
+        text-align: center;
+        font-size: small;
+        width: 20vw;
+    }
+}
+
+/*desktops */
+@media only screen and (min-width: 992px){
+    body{
+        margin:0px;
+        padding: 0px;
+        font-family: 'Cairo', sans-serif;
+        width: 100%;
+    }
+    .Header{
+        background-image: url(Background2.svg);
+        background-repeat: no-repeat;
+        height: 82vh;
+    }
+    .NavBar ul{
+        display: flex;
+        justify-content: center;
+    }
+    .NavBar li{
+        display: inline;
+        font-size: larger;
+        font-weight: bold;
+        margin-top: 2vh; 
+        margin-left: 5vh;
+        margin-right: 5vh;
+        text-shadow: 1px 1px #bdb9b9; 
+    }
+    .NavBar a{
+        text-decoration: none;
+        color: white;
+    }
+    .NavBar a:hover{
+        color: #FDD456;
+    }
+    .SiwarWorld{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        
+    }
+    .Logo{
+        margin-right: 10vw;
+        margin-top: 10vh;
+    }
+    .SiwarWorld p{
+        width: 332px;
+        text-align: center;
+        color: white;
+        margin-right: 10vw;
+        text-shadow: 1px 1px #bdb9b9; 
+    }
+    .SiwarGoal{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .SiwarGoal h1{
+        margin-top: 15vh;
+    }
+    .SiwarGoal p{
+        width: 500px;
+        text-align: center;
+    }
+    .SiwarLetters{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        margin-top: 15vh;
+        width: 100%;
+        
+    }
+    .Fast{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .Aware{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .Respect{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .Adult{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .SiwarLettersText{
+        text-align: center;
+        margin-left: 5vh;
+    }
+    .SiwarLettersText p{
+       width: 139px;
+    }
+    .SecondSection{ 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .SecondSection1{ 
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .Circle{
+        background-image: url(Circle.svg);
+        height: 100vh;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        margin-top: 15vh;
+        
+    }
+    .Circle h1{
+        color: white;
+        text-shadow: 1px 1px #bdb9b9; 
+        text-align: center;
+        margin-left: 10vh;
+    }
+    .Circle p{
+        color: white;
+        text-shadow: 1px 1px #bdb9b9; 
+        text-align: center;
+        width: 502px;
+        margin-left: 10vh;
+    }
+    .FirstChallenge{
+        margin-top: 30vh;
+        margin-left: 10vh;
+    }
+    .Button{
+        background-color: #4BBD9B;
+        border-radius: 40px;
+        width: 10vw;
+        padding: 1vh 5vh;
+        margin-left: 10vw ; 
+    }
+    .Button:hover{
+        background-color: white;
+        border: 2px solid #4BBD9B;
+    }
+    .Button a{
+        text-decoration: none;
+        color: white;
+    }
+    .Button a:hover{
+        background-color: white;
+        color: #4BBD9B;
+    }
+    Video{
+        margin-top: 25vh;
+    }
+    .WorkTeam{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20vh;
+    }
+    .TeamMembers{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    .MemberCards{
+        background-color: #F3F3F3;
+        height: 85vh;
+        width: 22vh;
+        border-radius: 5px;
+        margin: 2vh;
+        display: grid;
+        grid-template-rows: 20% 10% 10% 50% 10%;
+        justify-content: center;
+        text-align: center;
+    }
+    .MemberCards img{
+        margin-top: 3vh;
+    }
+    .MemberCards p{
+        text-align: center;
+        width: 139px;
+    }
+}
+
+
+
+

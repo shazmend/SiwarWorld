@@ -1,0 +1,226 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Cairo', sans-serif;
+
+
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px)  {
+    body{
+/* navbar icon */
+        .menu{
+            background-color: #F8926E;
+            display: flex;
+            flex-direction: row-reverse;
+            padding: 15px;    
+            color: white; 
+            width: 94vh;
+        }
+
+        /* navbar text disable */
+        .navbartext ul{
+            display: none;
+         }
+
+         /* the background image for under the navebar  */
+        .header{
+            background-image: url("./background.svg");
+            width: 97.5vh;
+            height: 57vh;
+            display: flex;
+            flex-direction: row; 
+        }
+        .left-side {
+            display: flex;
+            align-items: end;
+            width: 50%;
+            margin-top: 20%;
+            padding-bottom: 0%;
+        
+        }
+        .right-side {
+            display: flex;
+            justify-content: end; 
+            margin-right: 5%;
+            width: 50%;
+ 
+        }
+        
+        /* the 3 test cards  */
+  
+    .Cards{
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        margin-bottom: 50px;
+        align-items: end;        
+    }
+    .card{
+     border: 2px solid #c1bebee3;
+     border-radius: 15%;
+    width: 60%;
+    height: 90%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2%;
+    }
+
+
+    .card-text {
+        margin-top: 35px;
+        text-align: center; 
+        width: 80%; 
+    } 
+
+    .card-text h2{
+        margin: 19px;
+    } 
+     
+
+    .button {
+        border-radius: 30px;
+        width: 70%;
+        padding: 10px;
+        margin: 50px;
+        color: white;
+        border: 1px solid #4BBD9B;
+        background-color: #4BBD9B;
+        text-align: center;
+        align-items: center; 
+
+    }  
+    .button a{
+        text-decoration: none;
+        color: white;
+       }
+
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+ body{
+
+    /* navbar icon disable */
+    .menu{
+        display: none;
+    }
+
+    /* navbar text  */
+
+    .navbartext {
+        background-color: #F8926E;
+        width: 100%;
+        
+    }
+    .navbartext ul{
+            display: flex; 
+             flex-direction: row-reverse; 
+            justify-content: center;
+            padding-bottom: 15px;
+    }
+    .navbartext li{
+        display: inline;
+        font-size: larger;
+        font-weight: bold;
+        margin-top: 2vh; 
+        margin-left: 5vh;
+        margin-right: 5vh;        
+        text-shadow: 1px 1px #bdb9b9;
+    }
+    .navbartext a{
+        text-decoration: none;
+        color: white;
+    }
+    .navbartext a:hover{
+        color: #FDD456;
+    }
+    
+    /* the background image for under the navebar  */
+
+    .header{
+        background-image: url("./background.svg");
+        width: 100%;
+        height: 73vh;
+        display: flex;
+        flex-direction: row;
+    }
+    .left-side {
+        display: flex;
+        align-items: end;
+        width: 50%;
+        margin-top: 20%;
+        padding-bottom: 0%;
+    
+    }
+
+    .right-side {
+        display: flex;
+        justify-content: end; 
+        margin-right: 5%;
+        width: 50%;
+    }
+    
+    
+    /* the 3 test cards  */
+
+    .Cards{
+        display: flex;
+        flex-direction: row;
+        margin: 20px;
+        margin-bottom: 50px;
+        
+    }
+    .card{
+     border: 2px solid #c1bebee3;
+     border-radius: 15%;
+    width: 100%;
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2%;
+    }
+
+    .card-text {
+        text-align: center; 
+        margin-top: 35px;
+        width: 80%; 
+    } 
+
+    .card-text h2{
+        margin: 19px;
+    } 
+     
+
+    .button {
+        border-radius: 30px;
+        width: 70%;
+        padding: 10px;
+        margin: 50px;
+        color: white;
+        border: 1px solid #4BBD9B;
+        background-color: #4BBD9B;
+        text-align: center;
+        align-items: center; 
+
+    }  
+    .button:hover {
+        color: #4BBD9B;
+        border: 1px solid #4BBD9B;
+        background-color: white;
+    }  
+    .button a{
+        text-decoration: none;
+        color: white;
+    }
+    .button a:hover{
+        color: #4BBD9B;
+    }
+
+    
+ }
+}
